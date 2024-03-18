@@ -1,8 +1,8 @@
-class Color {
+export class Color {
   public constructor(public r: number, public g: number, public b: number) {}
 }
 
-class ColorTable {
+export class ColorTable {
   public constructor(public colors: Color[], public time: number) {}
 
   public getColor(position: number): Color {
@@ -12,7 +12,7 @@ class ColorTable {
   }
 }
 
-class TableVideo {
+export class TableVideo {
   public constructor(public frames: ColorTable[]) {
     this.frames.sort((n1, n2) => n1.time - n2.time);
   }
@@ -41,7 +41,7 @@ class TableVideo {
   }
 }
 
-class VideoPixelReader {
+export class VideoPixelReader {
   private frameRate: number;
   public resolution: number;
   private cachedVideo: TableVideo;

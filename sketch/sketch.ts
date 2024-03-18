@@ -1,5 +1,3 @@
-import p5 from 'p5';
-
 const sketch = function(p: p5) {
   const CELL_COUNT = 4;
 
