@@ -24,7 +24,7 @@ function benchmark(reader: VideoPixelReader) {
 window["setup"] = async function setup() {
     console.log("Setup Running");
     createCanvas(100, 100);
-    video1 = new VideoPixelReader("../assets/melody.webm", 24, 256);
+    video1 = new VideoPixelReader("/assets/Melody.webm", 24, 256);
     //video2 = new VideoPixelReader("./assets/MelodyEncoded - Copy.webm", 24, 256);
     let t0 = performance.now();
     await Promise.all([video1.populateData()]);
