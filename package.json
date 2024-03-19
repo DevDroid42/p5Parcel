@@ -10,7 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/p5": "^1.7.6",
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "parcel-reporter-static-files-copy": "^1.5.3"
   },
   "dependencies": {
     "p5": "^1.9.1"
